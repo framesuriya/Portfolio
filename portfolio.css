@@ -1,0 +1,354 @@
+.container {
+    display: flex;
+    flex-direction: column;
+
+    box-sizing: border-box;
+    width: 100%;
+    /* padding-left: 5%;
+    padding-right: 5%; */
+
+    color: #E9BD3A;
+    font-family: 'Aboreto', cursive;
+
+    background-color: rgb(19, 16, 16);
+}
+
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+
+    width: 100%;
+    height: 100vh;
+
+    font-size: 50px;
+}
+
+.background-img {
+    width: 100%;
+    flex: 2.5;
+    background-image: url(img/logo.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-bottom: 10px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0%;
+    flex: 2;
+}
+
+.navbar {
+    display: flex;
+    position: sticky;
+    top: 0%;
+    flex-direction: row;
+    align-items: center;
+
+    width: 100%;
+
+    border-bottom: 1px solid #E9BD3A;
+    background-color: rgb(19, 16, 16);
+}
+
+.logo {
+    flex: 0.1;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.logo>a>img {
+    justify-self: flex-start;
+    width: 100px;
+}
+
+.navbar-content {
+    flex: 0.8;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+
+    height: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+
+    border-right: 1px solid #E9BD3A;
+}
+
+.navbar-content:hover {
+    cursor: pointer;
+}
+
+.navbar-content>div {
+    padding-right: 20px;
+}
+
+.btn-mode {
+    flex: 0.1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    height: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 0px;
+    border: none;
+
+    font-size: 16px;
+    font-family: 'Aboreto', cursive;
+    color: #E9BD3A;
+
+    background-color: transparent;
+}
+
+.btn-mode:hover {
+    cursor: pointer;
+}
+
+.section-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    width: 100%;
+    height: 50vh;
+    padding-top: 10px;
+
+    background-color: rgb(53, 51, 51);
+}
+
+.section-2 div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+.section-2 div .section-2-content {
+    display: flex;
+    flex-direction: column;
+
+    width: 25%;
+}
+
+.section-2-content-img img {
+    width: 50%;
+    margin-bottom: 50px;
+    padding: 10px;
+
+    background-color: #E9BD3A;
+    border-radius: 100%;
+}
+
+.section-2-content-text {
+    width: 25%;
+}
+
+.section-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: rgb(53, 51, 51);
+}
+
+.section-3-name {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section-3-photo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.section-3-photo img {
+    width: 30%;
+    border-radius: 24px;
+}
+
+.section-3-profile {
+    width: 60%;
+    text-align: center;
+
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.section-3-skill {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section-3-skill-content {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+}
+
+.section-3-skill-content div:first-child {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.section-3-skill-content div:last-child {
+    flex: 1;
+}
+
+.section-3-skill-content div {
+    margin-bottom: 30px;
+}
+
+.section-3-skill-content div div:last-child {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#programminglanguages {
+    color: black;
+    background-color: #dab64a;
+}
+
+#tools {
+    background-color: #252114;
+}
+
+.section-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.section-4-title {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.section-4-content {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 0.5fr);
+    width: 100%;
+}
+
+.works {
+    margin: 5px;
+}
+
+.works>a>img {
+    border-radius: 12px;
+    width: 100%;
+    height: auto;
+}
+
+.works:hover {
+    cursor: pointer;
+}
+
+.section-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(53, 51, 51);
+    padding-bottom: 30px;
+}
+
+.section-5-title {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    background-color: #222020;
+}
+
+.section-5-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.contact-email,
+.contact-phone,
+.contact-github,
+.contact-linkedin,
+.contact-codepen,
+.contact-social {
+    flex: 1;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact-email:hover,
+.contact-phone:hover,
+.contact-github:hover,
+.contact-linkedin:hover,
+.contact-codepen:hover,
+.contact-social:hover {
+    background-color: #222020ad;
+}
+
+.contact-email>span:first-child,
+.contact-phone>span:first-child,
+.contact-github>span:first-child,
+.contact-linkedin>span:first-child,
+.contact-codepen>span:first-child {
+    flex: 0.7;
+    display: flex;
+    justify-content: end;
+    margin-right: 15px;
+}
+
+.contact-email>span:first-child:hover,
+.contact-phone>span:first-child:hover,
+.contact-github>span:first-child:hover,
+.contact-linkedin>span:first-child:hover,
+.contact-codepen>span:first-child:hover {
+    cursor: pointer;
+}
+
+.contact-email>span:last-child,
+.contact-phone>span:last-child,
+.contact-github>span:last-child,
+.contact-linkedin>span:last-child,
+.contact-codepen>span:last-child {
+    flex: 1;
+}
+
+.contact-svg-logo {
+    width: 30px;
+}
